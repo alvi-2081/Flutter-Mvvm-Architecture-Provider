@@ -5,6 +5,10 @@ import 'package:flutter_mvvm/data/network/BaseApiServices.dart';
 import 'package:http/http.dart' as http;
 
 class NetworkApiService extends BaseApiServices {
+  //
+  //    These is where we make strcture of get and post Apis
+  //
+
   dynamic responseJson;
   @override
   Future getGetApiResponse(String url) async {
@@ -32,6 +36,9 @@ class NetworkApiService extends BaseApiServices {
     return responseJson;
   }
 
+//
+//        This is where we handle status code
+//
   dynamic returnResponse(http.Response response) {
     switch (response.statusCode) {
       case 200:

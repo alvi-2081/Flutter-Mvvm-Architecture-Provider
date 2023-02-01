@@ -1,6 +1,6 @@
 import 'package:flutter_mvvm/data/network/BaseApiServices.dart';
 import 'package:flutter_mvvm/data/network/NetworkApiServices.dart';
-import 'package:flutter_mvvm/data/res/app_urls.dart';
+import 'package:flutter_mvvm/res/app_urls.dart';
 
 class Authrepository {
   BaseApiServices _apiServices = NetworkApiService();
